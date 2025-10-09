@@ -1,0 +1,13 @@
+.order-page {
+  font-family: Verdana;
+}
+
+.order-page .header {
+  border-bottom: 1px solid #ebf2f2;
+  font-size: 2rem;
+}
+
+.order-page h1 {
+  font-size: 1.75rem;
+}
+

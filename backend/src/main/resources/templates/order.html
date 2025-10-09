@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+  <title>Order Online</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link th:href="@{/css/order.css}" rel="stylesheet" />
+  <script th:src="@{/js/htmx.min.js}"></script>
+</head>
+<body>
+  <div class="order-page">
+    <div class="header">Welcome to Dan and Blake's Flan and Shakes</div>
+    <h1>Order Online</h1>
+    <div id="order-form">
+      <button hx-post="/order" hx-target="#order-form" hx-swap="outerHTML">Order</button>
+    </div>
+  </div>
+</body>
+</html>
+
