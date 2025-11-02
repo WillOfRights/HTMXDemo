@@ -5,16 +5,17 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <link th:href="@{/css/order.css}" rel="stylesheet" />
   <script th:src="@{/js/htmx.min.js}"></script>
+  <script th:src="@{/js/cdn.js}"></script>
 </head>
 <body>
   <div class="order-page">
-    <div class="header">Welcome to Dan and Blake's Flan and Shakes</div>
+    <div class="header">Dan and Blake's Flan and Shakes</div>
     <h1>Order Online</h1>
-    <div id="menu">
-      
-    </div>
     <div id="order-form">
       <button hx-post="/order" hx-target="#order-form" hx-swap="outerHTML">Order</button>
+    </div>
+    <div x-data="{ open: false }">
+      <div x-text="open" @click="open = !open" />
     </div>
   </div>
 </body>

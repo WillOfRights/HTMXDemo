@@ -1,10 +1,15 @@
+body {
+  margin: 0;
+}
 .order-page {
-  font-family: Verdana;
+  font-family: Khola;
 }
 
 .order-page .header {
-  border-bottom: 1px solid #ebf2f2;
+  background: #2989d8;
+  border-bottom: 22px solid #a4c3fd;
   font-size: 2rem;
+  color: #FFFFFF;
 }
 
 .order-page h1 {
